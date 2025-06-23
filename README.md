@@ -1,4 +1,4 @@
-XPhotonics X1 Pro CNC connections
+XPhotonics/Xlaserlab X1 Pro CNC connections
 ====================================
 
 This is a quick list of the setup and connections to turn the X1 Pro into a CNC laser cutter.
@@ -17,12 +17,14 @@ I used an old laser engraver I had kicking around that ran GRBL firmware (which 
 Circuit
 ---------
 
+**I worked out the connections for the CNC (3+4 on the DB25 connector) myself. Use at your own risk! These lasers are amazingly dangerous and you need to ensure you use the proper precautions.**
+
 ![Schematic](schematic.png)
 
 All you need to do is use the signal that was meant for the laser diode to control a relay
 which acts as a switch for a 'dry contact' output.
 
-**Note:** this was all very quickly put together with what I had on hand. An easier/better option might
+**NOTE:** this was all very quickly put together with what I had on hand. An easier/better option might
 be [a purpose-built relay board](https://www.amazon.co.uk/Channel-Optocoupler-Isolation-Support-Trigger/dp/B07XYQQDX8/ref=sr_1_1_sspa) or
 [an optoisolator like this](https://www.amazon.co.uk/Optocoupler-Isolation-Channel-Isolated-Processors/dp/B07YHQBCZ7/ref=sr_1_1_sspa)
 but I haven't tested either.
